@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'DemoFront';
+  title = 'Ejemplo';
+
+  constructor(private router:Router){}
+
+  Listar(){
+    this.router.navigate(["Listar"]); 
+  }
+  Nuevo(){
+    this.router.navigate(["Add"]); 
+  }
+
 }

@@ -1,0 +1,33 @@
+<div class="container" col-md-6>
+    <div class="card">
+        <div class="card-header">
+            <h3>EDITAR COLORES</h3>
+        </div>
+        <div class="card-header">
+            <form action="">
+                <div class="form-group">
+                    <label for="">NOMBRE</label>
+                    <input [(ngModel)] ="col.nombre" name="nombre" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">ESTADO</label>
+                    <input [(ngModel)] ="col.estado" name="estado" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">OBSERVACIONES</label>
+                    <input [(ngModel)] ="col.observaciones" name="observaciones" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">USUARIO</label>
+                    <input [(ngModel)] ="col.usuario" name="usuario" type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="">FECHAMODIFICACION</label>
+                    <input [(ngModel)] ="col.fechamodificacion" name="fechamodificacion" class="form-control" type="date">
+                </div>
+                <button (click)="Actualizar(col)" class="btn btn-danger">EDITAR</button>
+            </form>
+        </div>
+    </div>
+</div>
+
